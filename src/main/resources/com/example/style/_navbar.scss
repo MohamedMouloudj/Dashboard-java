@@ -1,0 +1,47 @@
+@use "variables" as vars;
+
+.nav-bar {
+  -fx-background-color: linear-gradient(to bottom,
+          vars.$primary-color-1,
+          vars.$secondary-color-1);
+  -fx-pref-width: 70px;
+  &:extended{
+    -fx-pref-width: 200px;
+  }
+}
+
+.nav-bar-button {
+  -fx-background-color: rgba(91, 59, 197, 0);
+  -fx-text-fill: vars.$text-color-light;
+  -fx-font-size: vars.$font-size-16;
+  -fx-font-weight: 700;
+  -fx-pref-width: 30px;
+  &:extended{
+    -fx-pref-width: 180px;
+  }
+}
+
+.nav-bar-button:hover {
+  -fx-background-color: rgba(255, 252, 87, 0.6);
+}
+
+.nav-bar-button:focused {
+  -fx-border-width: 0 0 0.5 0;
+  -fx-border-style: solid;
+  -fx-border-color: vars.$tertiary-color;
+  //-fx-background-color: vars.$primary-color-1;
+}
+
+.arkeo-dor-label {
+  -fx-text-fill: vars.$text-color-light;
+  -fx-font-size: vars.$font-size-20;
+  -fx-font-weight: 700;
+  -fx-pref-width: 50px;
+  &:extended{
+    -fx-pref-width:180px ;
+  }
+}
+
+.logout-button:focused {
+  -fx-border-width: 0;
+}

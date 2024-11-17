@@ -1,0 +1,8 @@
+@use "variables" as vars;
+
+.data-input {
+  -fx-border-color: vars.$primary-color-1;
+  -fx-border-width: 1.5px;
+  -fx-border-radius: vars.$border-radius-8;
+  -fx-background-radius: vars.$border-radius-8;
+}

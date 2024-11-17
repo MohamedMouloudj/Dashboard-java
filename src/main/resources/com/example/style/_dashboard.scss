@@ -1,0 +1,44 @@
+@use "variables" as vars;
+
+.card{
+  -fx-background-color: vars.$background-light;
+  -fx-border-radius: 0 vars.$border-radius-8 0 0;
+  -fx-background-radius: vars.$border-radius-8;
+  -fx-effect: dropshadow(three-pass-box, rgba(0, 0, 0, 0.2), 30, 0, 0, 0);
+  &:dark{
+    -fx-background-color: vars.$background-dark;
+    -fx-effect: dropshadow(three-pass-box, rgba(255, 255, 255, 0.1), 15, 0, 0, 0);
+  }
+}
+.card-1{
+  -fx-border-color: vars.$primary-color-1;
+  -fx-border-width: 0 0 0 8;
+}
+.card-2{
+  -fx-border-color: vars.$secondary-color-1;
+  -fx-border-width: 0 0 0 8;
+}
+.card-3{
+  -fx-border-color: vars.$color-green;
+  -fx-border-width: 0 0 0 8;
+}
+
+.default-color0.chart-series-line {
+    -fx-stroke: vars.$secondary-color-1;
+}
+
+.default-color1.chart-series-bar {
+    -fx-stroke: vars.$primary-color-1;
+}
+
+.custom-text-field {
+  -fx-background-color: white;
+  -fx-highlight-fill: white;
+  -fx-text-fill: black;
+  -fx-highlight-text-fill: black;
+  -fx-prompt-text-fill: gray;
+}
+
+.button-bar > .container > .button {
+  -fx-background-color: white;
+}

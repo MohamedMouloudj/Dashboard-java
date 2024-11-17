@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+
+<fx:root fx:id="navbarContainer" alignment="TOP_CENTER" prefHeight="586.0" spacing="30.0" styleClass="nav-bar" stylesheets="@../style/style.css" type="VBox" BorderPane.alignment="CENTER" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1">
+        <padding>
+            <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+        </padding>
+        <HBox fx:id="logoContainer" alignment="CENTER" maxWidth="1.7976931348623157E308" prefHeight="46.0" styleClass="logo-container">
+            <Label fx:id="logoTitle" alignment="CENTER" maxWidth="1.7976931348623157E308" prefHeight="30.0" prefWidth="197.0" styleClass="arkeo-dor-label" text="Example" HBox.hgrow="SOMETIMES">
+                <font>
+                    <Font name="Arial Bold" size="20.0" />
+                </font>
+            </Label>
+        </HBox>
+        <VBox fx:id="centerContainer" alignment="CENTER" prefHeight="200.0" spacing="15.0" styleClass="nav-tabs">
+            <Button fx:id="dashboardButton" mnemonicParsing="false" prefHeight="29.0" prefWidth="180.0" styleClass="nav-bar-button" text="Dashboard">
+                <graphic>
+                    <ImageView fitHeight="20.0" fitWidth="20.0" pickOnBounds="true" preserveRatio="true">
+                        <image>
+                            <Image url="@../images/dashboard.png" />
+                        </image>
+                    </ImageView>
+                </graphic>
+                <cursor>
+                    <Cursor fx:constant="HAND" />
+                </cursor>
+            </Button>
+        </VBox>
+        <Line fx:id="separatorLine" endX="190.0" rotate="180.0" stroke="rgba(0,0,0,0)" strokeLineCap="ROUND" strokeLineJoin="ROUND" strokeType="OUTSIDE" strokeWidth="2.0" />
+        <VBox fx:id="bottomContainer" alignment="CENTER" prefHeight="70.0" spacing="15.0" styleClass="bottom-tabs">
+      <children>
+         <Button fx:id="logOutButton" mnemonicParsing="false" styleClass="nav-bar-button" text="Exit">
+            <graphic>
+               <ImageView fitHeight="20.0" fitWidth="20.0" pickOnBounds="true" preserveRatio="true">
+                  <image>
+                     <Image url="@../images/logout.png" />
+                  </image>
+               </ImageView>
+            </graphic>
+         </Button>
+      </children></VBox>
+    </fx:root>

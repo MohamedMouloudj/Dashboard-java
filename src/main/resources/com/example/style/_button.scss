@@ -1,0 +1,48 @@
+@use "variables" as vars;
+
+
+.action-button{
+  -fx-background-color: vars.$secondary-color-1;
+  -fx-text-fill: vars.$text-color-light;
+  -fx-font-size: vars.$font-size-14;
+  -fx-font-weight: 700;
+  -fx-border-radius: vars.$border-radius-4;
+  -fx-background-radius: vars.$border-radius-4;
+  -fx-cursor: hand;
+  &:pressed {
+    -fx-background-color: vars.$secondary-color-2;
+    -fx-pref-height: 35px;
+  }
+}
+.delete-button{
+  -fx-background-color: vars.$color-red;
+  -fx-text-fill: vars.$text-color-light;
+  -fx-font-size: vars.$font-size-14;
+  -fx-font-weight: 700;
+  -fx-border-radius: vars.$border-radius-4;
+  -fx-background-radius: vars.$border-radius-4;
+  &:pressed {
+    -fx-background-color: #ea0808;
+  }
+}
+
+.more-button{
+  -fx-background-color: rgba(91, 59, 197, 0);
+  -fx-border-color: vars.$secondary-color-2;
+  -fx-border-width: 2px;
+  -fx-border-radius: vars.$border-radius-4;
+  -fx-background-radius: vars.$border-radius-4;
+  -fx-cursor: hand;
+  &:pressed{
+    -fx-border-color: none;
+    -fx-background-color: vars.$secondary-color-1;
+    -fx-text-fill: vars.$text-color-light;
+    -fx-pref-height: 35px;
+  }
+}
+.save-button{
+  -fx-background-color: vars.$color-green;
+  &:pressed {
+    -fx-background-color: #0ea808;
+  }
+}

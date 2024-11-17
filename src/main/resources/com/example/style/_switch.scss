@@ -1,0 +1,27 @@
+@use "variables" as vars;
+
+.toggle-switch{
+  >.label-container {
+    >.label {
+      -fx-font-size: vars.$font-size-14;
+      -fx-text-fill: vars.$text-color-light;
+    }
+  }
+  >.thumb {
+    -fx-background-insets: 0, 2px;
+    -fx-background-radius: 10em;
+    -fx-padding: 0.85em;
+    -fx-alignment: CENTER;
+    -fx-content-display: LEFT;
+    -fx-opacity: 1;
+  }
+  &:selected {
+    >.thumb {
+      -fx-background-color: vars.$primary-color-2, vars.$text-color-light;
+      -fx-opacity: 1;
+    }
+    >.thumb-area{
+      -fx-background-color: vars.$primary-color-1;
+    }
+  }
+}

@@ -1,0 +1,165 @@
+.action-button {
+  -fx-background-color: #FAC218;
+  -fx-text-fill: #FFFFFF;
+  -fx-font-size: 14px;
+  -fx-font-weight: 700;
+  -fx-border-radius: 4px;
+  -fx-background-radius: 4px;
+  -fx-cursor: hand;
+}
+.action-button:pressed {
+  -fx-background-color: #f6ca46;
+  -fx-pref-height: 35px;
+}
+
+.delete-button {
+  -fx-background-color: #CB0000;
+  -fx-text-fill: #FFFFFF;
+  -fx-font-size: 14px;
+  -fx-font-weight: 700;
+  -fx-border-radius: 4px;
+  -fx-background-radius: 4px;
+}
+.delete-button:pressed {
+  -fx-background-color: #ea0808;
+}
+
+.more-button {
+  -fx-background-color: rgba(91, 59, 197, 0);
+  -fx-border-color: #f6ca46;
+  -fx-border-width: 2px;
+  -fx-border-radius: 4px;
+  -fx-background-radius: 4px;
+  -fx-cursor: hand;
+}
+.more-button:pressed {
+  -fx-border-color: none;
+  -fx-background-color: #FAC218;
+  -fx-text-fill: #FFFFFF;
+  -fx-pref-height: 35px;
+}
+
+.save-button {
+  -fx-background-color: #1CC900;
+}
+.save-button:pressed {
+  -fx-background-color: #0ea808;
+}
+
+.data-input {
+  -fx-border-color: #ff8200;
+  -fx-border-width: 1.5px;
+  -fx-border-radius: 8px;
+  -fx-background-radius: 8px;
+}
+
+.toggle-switch > .label-container > .label {
+  -fx-font-size: 14px;
+  -fx-text-fill: #FFFFFF;
+}
+.toggle-switch > .thumb {
+  -fx-background-insets: 0, 2px;
+  -fx-background-radius: 10em;
+  -fx-padding: 0.85em;
+  -fx-alignment: CENTER;
+  -fx-content-display: LEFT;
+  -fx-opacity: 1;
+}
+.toggle-switch:selected > .thumb {
+  -fx-background-color: #ffab4d, #FFFFFF;
+  -fx-opacity: 1;
+}
+.toggle-switch:selected > .thumb-area {
+  -fx-background-color: #ff8200;
+}
+
+.nav-bar {
+  -fx-background-color: linear-gradient(to bottom, #ff8200, #FAC218);
+  -fx-pref-width: 70px;
+}
+.nav-bar:extended {
+  -fx-pref-width: 200px;
+}
+
+.nav-bar-button {
+  -fx-background-color: rgba(91, 59, 197, 0);
+  -fx-text-fill: #FFFFFF;
+  -fx-font-size: 16px;
+  -fx-font-weight: 700;
+  -fx-pref-width: 30px;
+}
+.nav-bar-button:extended {
+  -fx-pref-width: 180px;
+}
+
+.nav-bar-button:hover {
+  -fx-background-color: rgba(255, 252, 87, 0.6);
+}
+
+.nav-bar-button:focused {
+  -fx-border-width: 0 0 0.5 0;
+  -fx-border-style: solid;
+  -fx-border-color: #9C9C9C;
+}
+
+.arkeo-dor-label {
+  -fx-text-fill: #FFFFFF;
+  -fx-font-size: 20px;
+  -fx-font-weight: 700;
+  -fx-pref-width: 50px;
+}
+.arkeo-dor-label:extended {
+  -fx-pref-width: 180px;
+}
+
+.logout-button:focused {
+  -fx-border-width: 0;
+}
+
+.card {
+  -fx-background-color: #EEEEEE;
+  -fx-border-radius: 0 8px 0 0;
+  -fx-background-radius: 8px;
+  -fx-effect: dropshadow(three-pass-box, rgba(0, 0, 0, 0.2), 30, 0, 0, 0);
+}
+.card:dark {
+  -fx-background-color: #1C1C1C;
+  -fx-effect: dropshadow(three-pass-box, rgba(255, 255, 255, 0.1), 15, 0, 0, 0);
+}
+
+.card-1 {
+  -fx-border-color: #ff8200;
+  -fx-border-width: 0 0 0 8;
+}
+
+.card-2 {
+  -fx-border-color: #FAC218;
+  -fx-border-width: 0 0 0 8;
+}
+
+.card-3 {
+  -fx-border-color: #1CC900;
+  -fx-border-width: 0 0 0 8;
+}
+
+.default-color0.chart-series-line {
+  -fx-stroke: #FAC218;
+}
+
+.default-color1.chart-series-bar {
+  -fx-stroke: #ff8200;
+}
+
+.custom-text-field {
+  -fx-background-color: white;
+  -fx-highlight-fill: white;
+  -fx-text-fill: black;
+  -fx-highlight-text-fill: black;
+  -fx-prompt-text-fill: gray;
+}
+
+.button-bar > .container > .button {
+  -fx-background-color: white;
+}
+
+/*# sourceMappingURL=style.css.map */
